@@ -60,3 +60,19 @@ In the example above, we print out `['E', 'D', 'C', 'B', 'A']`.
 ###Instructions
 1. Create a variable called `backwards` and set it equal to the reversed version of `my_list`.
 2. Make sure to reverse the list in the editor by passing your list slice a negative stride, like in the example above.
+
+##Stride Length (10/18)
+
+A positive stride length traverses the list from left to right, and a negative one traverses the list from right to left.
+
+Further, a stride length of 1 traverses the list "by ones," a stride length of 2 traverses the list "by twos," and so on.
+
+###Instructions
+Create a variable, `backwards_by_tens`, and set it equal to the result of going backwards through `to_one_hundred` by tens. Go ahead and print `backwards_by_tens` to the console.
+
+######Hint
+Remember, the syntax is:
+
+```python
+new_list = old_list[begin:end:stride]
+```
