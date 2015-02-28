@@ -141,3 +141,89 @@ The example above is just a reminder of the syntax.
 
 ######Hint
 You'll want to filter for `x >=30 and x <=70`.
+
+##Iterating Over Dictionaries (16/18)
+First, let's review iterating over a `dict`.
+
+###Instructions
+Call the appropriate method on `movies` such that it will `print` out all the _items_ (hint, hint) in the dictionary—that is, each key and each value.
+
+######Hint
+You'll just want to `print` the result of calling the `.items()` method on your `movies`. No loops necessary!
+
+Comprehending Comprehensions (16/18)
+Good! Now let's take another look at list comprehensions.
+
+```python
+squares = [x**2 for x in range(5)]
+```
+
+###Instructions
+Use a list comprehension to create a list, `threes_and_fives`, that consists only of the numbers between 1 and 15 (inclusive) that are evenly divisible by 3 or 5.
+
+######Hint
+Remember, list comprehension syntax looks like this:
+
+```python
+list_name = [var for var in range]
+```
+
+You can include an optional `if` statement after the range. (You'll need such an `if` statement to check whether the numbers are evenly divisible by 3 or 5.)
+
+Remember, modulo (`%`) is a good way to check if a number is evenly divisible by another.
+
+##List Slicing (17/18)
+Great! Next up: list slicing.
+
+```python
+str = "ABCDEFGHIJ"
+start, end, stride = 1, 6, 2
+str[start:end:stride]
+```
+
+You can think of a Python string as a list of characters.
+
+###Instructions
+The string in the editor is garbled in two ways:
+
+1. First, our message is backwards;
+2. Second, the letter we want is every other letter.
+3. Use list slicing to extract the message and save it to a variable called `message`.
+
+It's important to remember that lists are mutable (changeable) in Python, but strings aren't; when you slice a string, you get back a _new string_. The original string is unchanged unless you purposely "save over" it, like this:
+
+```python
+my_string = "Monty Python"
+# => Monty Python
+my_string = my_string[:-7]
+# => Monty
+```
+
+##Lambda Expressions (18/18)
+Last but not least, let's look over some `lambdas`.
+
+```python
+my_list = range(16)
+filter(lambda x: x % 3 == 0, my_list)
+```
+
+We've given you another (slightly different) `garbled`. Sort it out with a `filter()` and a `lambda`.
+
+###Instructions
+1. Create a new variable called `message`.
+2. Set it to the result of calling `filter()` with the appropriate `lambda` that will filter out the `"X"`s. The second argument will be `garbled`.
+3. Finally, `print` your `message` to the console.
+
+######Hint
+Remember, a lambda expression looks like this:
+
+```python
+lambda variable: variable expression
+```
+
+For example, you might have
+
+lamba x: x != 10
+
+Remember, `filter()` takes two arguments: the first is the function that tells it what to filter (in this case, your lambda expression), and the second is the object to perform the filtering on (the `garbled` string).
+
