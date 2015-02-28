@@ -62,7 +62,6 @@ In the example above, we print out `['E', 'D', 'C', 'B', 'A']`.
 2. Make sure to reverse the list in the editor by passing your list slice a negative stride, like in the example above.
 
 ##Stride Length (10/18)
-
 A positive stride length traverses the list from left to right, and a negative one traverses the list from right to left.
 
 Further, a stride length of 1 traverses the list "by ones," a stride length of 2 traverses the list "by twos," and so on.
@@ -76,3 +75,69 @@ Remember, the syntax is:
 ```python
 new_list = old_list[begin:end:stride]
 ```
+
+##Practice Makes Perfect (11/18)
+Great work! See? This list slicing business is pretty straightforward.
+
+Let's do one more, just to prove you really know your stuff.
+
+###Instructions
+1. Create a list, `to_21`, that's just the numbers from 1 to 21, inclusive.
+2. Create a second list, `odds`, that contains only the odd numbers in the `to_21` list (1, 3, 5, and so on). Use list slicing for this one instead of a list comprehension.
+3. Finally, create a third list, `middle_third`, that's equal to the middle third of `to_21`, from 8 to 14, inclusive.
+
+##Anonymous Functions (12/18)
+One of the more powerful aspects of Python is that it allows for a style of programming called *functional programming*, which means that you're allowed to pass functions around just as if they were variables or values. Sometimes we take this for granted, but not all languages allow this!
+
+Check out the code at the right. See the `lambda` bit? Typing
+
+```python
+lamba x: x % 3 == 0
+```
+Is the same as
+```python
+def by_three(x):
+    return x % 3 == 0
+```
+
+Only we don't need to actually give the function a name; it does its work and returns a value without one. That's why the function the lambda creates is an *anonymous function*.
+
+When we pass the lambda to `filter`, `filter` uses the lambda to determine what to filter, and the second argument (`my_list`, which is just the numbers 0 – 15) is the list it does the filtering on.
+
+###Instructions
+Can you guess what the this code will `print` to the console? Click Save & Submit Code to see.
+
+##Lambda Syntax (13/18)
+Lambda functions are defined using the following syntax:
+```python
+my_list = range(16)
+filter(lambda x: x % 3 == 0, my_list)
+```
+
+Lambdas are useful when you need a quick function to do some work for you.
+
+If you plan on creating a function you'll use over and over, you're better off using `def` and giving that function a name.
+
+###Instructions
+1. Fill in the first part of the `filter` function with a `lambda`. The `lambda` should ensure that only `"Python"` is returned by the `filter`.
+2. Fill in the second part of the `filter` function with `languages`, the list to filter.
+
+######Hint
+Remember, `filter()` takes two arguments: the first is the function that tells it what to filter, and the second is the object to perform the filtering on.
+
+##Try It! (14/18)
+All right! Time to test out `filter()` and `lambda` expressions.
+
+```python
+cubes = [x**3 for x in range(1, 11)]
+filter(lambda x: x % 3 == 0, cubes)
+```
+
+The example above is just a reminder of the syntax.
+
+###Instructions
+1. Create a list, `squares`, that consists of the squares of the numbers 1 to 10. A list comprehension could be useful here!
+2. Use `filter()` and a `lambda` expression to `print` out only the squares that are between 30 and 70 (inclusive).
+
+######Hint
+You'll want to filter for `x >=30 and x <=70`.
