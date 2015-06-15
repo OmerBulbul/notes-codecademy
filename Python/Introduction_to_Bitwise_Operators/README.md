@@ -287,7 +287,7 @@ In the editor is a variable, `a`. Use a bitmask and the value `a` in order to ac
 ###### Hint
 You should use `|` and the variable `a` with a mask where the third bit from the right, and only the third bit from the right, is on.
 
-## Just Flip Out
+## Just Flip Out (13/14)
 Using the XOR (`^`) operator is very useful for flipping bits. Using `^` on a bit with the number one will return a result where that bit is flipped.
 
 For example, let's say I want to flip all of the bits in `a`. I might do this:
