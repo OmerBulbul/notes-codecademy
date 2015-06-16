@@ -97,6 +97,25 @@ print my_shape.sides
 1. First we create a class named `Square` with an attribute `sides`.
 2. Outside the class definition, we create a new instance of `Square` named `my_shape` and access that attribute using `my_shape.sides`.
 
+### Instructions
+1. Outside the `Animal` class definition, create a variable named `zebra` and set it equal to `Animal("Jeffrey")`.
+2. Then `print` out `zebra`'s name.
+
+Click "Stuck? Get a hint!" for an example.
+
+###### Hint
+You can create a new `Animal` object named "`Jeffrey`" like this:
+
+```python
+zebra = Animal("Jeffrey")
+```
+
+You can print out `"Jeffrey"`'s name like this:
+
+```python
+print zebra.name
+```
+
 ## More on __init__() and self (6/18)
 Now that you're starting to understand how classes and objects work, it's worth delving a bit more into `__init__()` and `self`. They can be confusing!
 

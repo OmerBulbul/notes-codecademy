@@ -21,3 +21,6 @@ class ShoppingCart(object):
         else:
             print product + " is not in the cart."
 
+my_cart = ShoppingCart("Sho")
+my_cart.add_item("2x8GB RAM", 100)
+

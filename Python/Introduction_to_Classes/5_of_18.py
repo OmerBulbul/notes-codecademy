@@ -1,6 +1,6 @@
-class Square(object):
-    def __init__(self, sides):
-        self.sides = 4
+class Animal(object):
+    def __init__(self, name):
+        self.name = name
 
-my_shape = Square()
-print my_shape.sides
+zebra = Animal("Jeffrey")
+print zebra.name

@@ -5,3 +5,10 @@ class Animal(object):
         self.name = name
         self.age = age
     # Add your method here!
+    def description(self):  # Remember to add `self` as an argument of a method!
+        print self.name
+        print self.age
+
+hippo = Animal("Hipopon", 3)
+hippo.description()
+
