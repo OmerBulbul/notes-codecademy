@@ -111,7 +111,7 @@ new_object.new_variable
 ### Instructions
 Now that you've created `my_car` print its member variables:
 
-1. First `print` the model of `my_car`.
+1. First `print` the model of `my_car`. Click "Stuck? Get a hint!" for an example.
 2. Then `print` out the color of `my_car`.
 3. Then `print` out the mpg of `my_car`.
 
