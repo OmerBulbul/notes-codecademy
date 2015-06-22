@@ -2,14 +2,6 @@
 
 This tutorial will introduce you to Python, a general-purpose, object-oriented interpreted language you can use for countless standalone projects or scripting applications.
 
-## Table of Contents
-[TOC]
-
-# Python Syntax
-
-## Welcome!
-## Variables
-
 ## Welcome!
 Python is an easy to learn programming language. You can use it to create web apps, games, even a search engine!
 
