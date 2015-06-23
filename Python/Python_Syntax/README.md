@@ -28,6 +28,7 @@ This tutorial will introduce you to Python, a general-purpose, object-oriented i
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+<div id='variables-and-data-types'/>
 # Variables and Data Types
 <div id='welcome-113'/>
 ## Welcome! (1/13)
@@ -109,7 +110,7 @@ Try it and see! Change the value of `my_int` from `7` to `3` in the editor
 ###### Hint
 All you need to do is type `3` after the equals sign on line 8.
 
-
+<div id='whitespace-and-statements'/>
 # Whitespace and Statements
 <div id='whitespace-513'/>
 ## Whitespace (5/13)
@@ -172,6 +173,7 @@ Remember, you assign values with the `=` sign, like so:
 example_variable = True
 ```
 
+<div id='comments'/>
 # Comments
 <div id='single-line-comments-813'/>
 ## Single Line Comments (8/13)
@@ -213,6 +215,7 @@ Write a multi-line comment in the editor. It can be any text you'd like!
 ###### Hint
 Your multiline comment is just a regular phrase or sentence starting with `"""` and ending with `"""`. No `#` needed at all!
 
+<div id='math-operations'/>
 # Math Operations
 <div id='math-1013'/>
 ## Math (10/13)
@@ -271,6 +274,7 @@ Any odd number `% 2` will equal 1 (since dividing any odd number by 2 always lea
 
 Remember that you can't divide by 0 or you will get an error. Same goes for `%`. `10 % 0` will cause an error!
 
+<div id='review'/>
 # Review
 <div id='bringing-it-all-together-1313'/>
 ## Bringing It All Together (13/13)
