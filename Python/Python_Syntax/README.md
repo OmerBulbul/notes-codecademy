@@ -2,7 +2,7 @@
 
 This tutorial will introduce you to Python, a general-purpose, object-oriented interpreted language you can use for countless standalone projects or scripting applications.
 
-## Welcome!
+## Welcome! (1/13)
 Python is an easy to learn programming language. You can use it to create web apps, games, even a search engine!
 
 Ready to learn Python? Click Save & Submit Code to continue!
@@ -13,7 +13,7 @@ Ready to learn Python? Click Save & Submit Code to continue!
 ###### Hint
 If the loading bar fills but doesn't fade away, try refreshing the page.
 
-## Variables
+## Variables (2/13)
 Creating web apps, games, and search engines all involve storing and working with different types of data. They do so using **variables**. A **variable** stores a piece of data, and gives it a specific name.
 
 For example:
@@ -33,7 +33,7 @@ Make sure to put `my_variable` on the left side of the `=`, and `10` on the righ
 
 You will notice that the window says "None" in it when you run the code. This is the "result" of your code, but you can generally ignore it.
 
-## Booleans
+## Booleans (3/13)
 Great! You just stored a number in a variable. Numbers are one data type we use in programming. A second data type is called a **boolean**.
 
 A **boolean** is like a light switch. It can only have two values. Just like a light switch can only be on or off, a boolean can only be `True` or `False`.
@@ -55,7 +55,7 @@ Set the following variables to the corresponding values:
 ###### Hint
 Remember to capitalize `True`!
 
-## You've Been Reassigned
+## You've Been Reassigned (4/13)
 Now you know how to use variables to store values.
 
 Say `my_int = 7`. You can change the value of a variable by "reassigning" it, like this:
@@ -70,7 +70,7 @@ Try it and see! Change the value of `my_int` from `7` to `3` in the editor
 ###### Hint
 All you need to do is type `3` after the equals sign on line 8.
 
-## Whitespace
+## Whitespace (5/13)
 In Python, whitespace is used to structure code. Whitespace is important, so you have to be careful with how you use it.
 
 ### Instructions
@@ -78,7 +78,7 @@ The code on the right is badly formatted. Hit "Save & Submit Code" to see what h
 
 You should see an error message. We'll fix it in the next exercise!
 
-## Whitespace Means Right Space
+## Whitespace Means Right Space (6/13)
 Now let's examine the error from the last lesson:
 
 ```python
@@ -103,7 +103,7 @@ def spam():
 print spam()
 ```
 
-## A Matter of Interpretation
+## A Matter of Interpretation (7/13)
 The window in the top right corner of the page is called the interpreter. The interpreter runs your code line by line, and checks for any errors.
 
 ```python
@@ -123,7 +123,7 @@ Remember, you assign values with the `=` sign, like so:
 example_variable = True
 ```
 
-## Single Line Comments
+## Single Line Comments (8/13)
 You probably saw us use the `#` sign a few times in earlier exercises. The `#` sign is for comments. A comment is a line of text that Python won't try to run as code. It's just for humans to read.
 
 Comments make your program easier to understand. When you look back at your code or others want to collaborate with you, they can read your comments and easily figure out what your code does.
@@ -140,7 +140,7 @@ You comment could be something like this:
 
 Note that if you delete `mysterious_variable`, you may see an error in the console. You can ignore it.
 
-## Multi-Line Comments
+## Multi-Line Comments (9/13)
 The `#` sign will only comment out a single line. While you could write a multi-line comment, starting each line with `#`, that can be a pain.
 
 Instead, for multi-line comments, you can include the whole block in a set of triple quotation marks:
@@ -157,7 +157,7 @@ Write a multi-line comment in the editor. It can be any text you'd like!
 ###### Hint
 Your multiline comment is just a regular phrase or sentence starting with `"""` and ending with `"""`. No `#` needed at all!
 
-## Math
+## Math (10/13)
 Great! Now let's do some math. You can add, subtract, multiply, divide numbers like this
 
 ```
@@ -177,7 +177,7 @@ Remember, you can set a variable equal to a value with
 variable_name = # Add your value here!
 ```
 
-## Exponentiation
+## Exponentiation (11/13)
 All that math can be done on a calculator, so why use Python? Because you can combine math with other data types (e.g. **booleans**) and commands to create useful programs. Calculators just stick to numbers.
 
 Now let's work with exponents.
@@ -195,7 +195,7 @@ Create a new variable called `eggs` and use exponents to set `eggs` equal 100.
 
 Try raising 10 to the power of 2.
 
-## Modulo
+## Modulo (12/13)
 Our final operator is **modulo**. **Modulo** returns the remainder from a division. So, if you type `3 % 2`, it will return `1`, because 2 goes into 3 evenly once, with 1 left over.
 
 ### Instructions
@@ -206,7 +206,7 @@ Any odd number `% 2` will equal 1 (since dividing any odd number by 2 always lea
 
 Remember that you can't divide by 0 or you will get an error. Same goes for `%`. `10 % 0` will cause an error!
 
-## Bringing It All Together
+## Bringing It All Together (13/13)
 Nice work! So far, you've learned about:
 
 - **Variables**, which store values for later use
