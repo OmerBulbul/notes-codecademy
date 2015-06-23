@@ -1,4 +1,3 @@
-
 # Python Syntax
 
 This tutorial will introduce you to Python, a general-purpose, object-oriented interpreted language you can use for countless standalone projects or scripting applications.
@@ -8,22 +7,28 @@ This tutorial will introduce you to Python, a general-purpose, object-oriented i
 <div id='top'/>
 ## Table of Contents
 
-1. [Welcome! (1/13)](#welcome-113)
-2. [Variables (2/13)](#variables-213)
-3. [Booleans (3/13)](#booleans-313)
-4. [You've Been Reassigned (4/13)](#youve-been-reassigned-413)
-5. [Whitespace (5/13)](#whitespace-513)
-6. [Whitespace Means Right Space (6/13)](#whitespace-means-right-space-613)
-7. [A Matter of Interpretation (7/13)](#a-matter-of-interpretation-713)
-8. [Single Line Comments (8/13)](#single-line-comments-813)
-9. [Multi-Line Comments (9/13)](#multi-line-comments-913)
-10. [Math (10/13)](#math-1013)
-11. [Exponentiation (11/13)](#exponentiation-1113)
-12. [Modulo (12/13)](#modulo-1213)
-13. [Bringing It All Together (13/13)](#bringing-it-all-together-1313)
+- [Variables and Data Types](#variables-and-data-types)
+	- [Welcome! (1/13)](#welcome-113)
+	- [Variables (2/13)](#variables-213)
+	- [Booleans (3/13)](#booleans-313)
+	- [You've Been Reassigned (4/13)](#youve-been-reassigned-413)
+- [Whitespace and Statements](#whitespace-and-statements)
+	- [Whitespace (5/13)](#whitespace-513)
+	- [Whitespace Means Right Space (6/13)](#whitespace-means-right-space-613)
+	- [A Matter of Interpretation (7/13)](#a-matter-of-interpretation-713)
+- [Comments](#comments)
+	- [Single Line Comments (8/13)](#single-line-comments-813)
+	- [Multi-Line Comments (9/13)](#multi-line-comments-913)
+- [Math Operations](#math-operations)
+	- [Math (10/13)](#math-1013)
+	- [Exponentiation (11/13)](#exponentiation-1113)
+	- [Modulo (12/13)](#modulo-1213)
+- [Review](#review)
+	- [Bringing It All Together (13/13)](#bringing-it-all-together-1313)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# Variables and Data Types
 <div id='welcome-113'/>
 ## Welcome! (1/13)
 [[Back to Top]](#top)
@@ -40,6 +45,8 @@ If the loading bar fills but doesn't fade away, try refreshing the page.
 
 <div id='variables-213'/>
 ## Variables (2/13)
+[[Back to Top]](#top)
+
 Creating web apps, games, and search engines all involve storing and working with different types of data. They do so using **variables**. A **variable** stores a piece of data, and gives it a specific name.
 
 For example:
@@ -61,6 +68,8 @@ You will notice that the window says "None" in it when you run the code. This is
 
 <div id='booleans-313'/>
 ## Booleans (3/13)
+[[Back to Top]](#top)
+
 Great! You just stored a number in a variable. Numbers are one data type we use in programming. A second data type is called a **boolean**.
 
 A **boolean** is like a light switch. It can only have two values. Just like a light switch can only be on or off, a boolean can only be `True` or `False`.
@@ -82,7 +91,10 @@ Set the following variables to the corresponding values:
 ###### Hint
 Remember to capitalize `True`!
 
+<div id='youve-been-reassigned-413'/>
 ## You've Been Reassigned (4/13)
+[[Back to Top]](#top)
+
 Now you know how to use variables to store values.
 
 Say `my_int = 7`. You can change the value of a variable by "reassigning" it, like this:
@@ -97,7 +109,12 @@ Try it and see! Change the value of `my_int` from `7` to `3` in the editor
 ###### Hint
 All you need to do is type `3` after the equals sign on line 8.
 
+
+# Whitespace and Statements
+<div id='whitespace-513'/>
 ## Whitespace (5/13)
+[[Back to Top]](#top)
+
 In Python, whitespace is used to structure code. Whitespace is important, so you have to be careful with how you use it.
 
 ### Instructions
@@ -105,7 +122,10 @@ The code on the right is badly formatted. Hit "Save & Submit Code" to see what h
 
 You should see an error message. We'll fix it in the next exercise!
 
+<div id='whitespace-means-right-space-613'/>
 ## Whitespace Means Right Space (6/13)
+[[Back to Top]](#top)
+
 Now let's examine the error from the last lesson:
 
 ```python
@@ -129,8 +149,10 @@ def spam():
 
 print spam()
 ```
-
+<div id='a-matter-of-interpretation-713'/>
 ## A Matter of Interpretation (7/13)
+[[Back to Top]](#top)
+
 The window in the top right corner of the page is called the interpreter. The interpreter runs your code line by line, and checks for any errors.
 
 ```python
@@ -150,7 +172,11 @@ Remember, you assign values with the `=` sign, like so:
 example_variable = True
 ```
 
+# Comments
+<div id='single-line-comments-813'/>
 ## Single Line Comments (8/13)
+[[Back to Top]](#top)
+
 You probably saw us use the `#` sign a few times in earlier exercises. The `#` sign is for comments. A comment is a line of text that Python won't try to run as code. It's just for humans to read.
 
 Comments make your program easier to understand. When you look back at your code or others want to collaborate with you, they can read your comments and easily figure out what your code does.
@@ -167,7 +193,10 @@ You comment could be something like this:
 
 Note that if you delete `mysterious_variable`, you may see an error in the console. You can ignore it.
 
+<div id='multi-line-comments-913'/>
 ## Multi-Line Comments (9/13)
+[[Back to Top]](#top)
+
 The `#` sign will only comment out a single line. While you could write a multi-line comment, starting each line with `#`, that can be a pain.
 
 Instead, for multi-line comments, you can include the whole block in a set of triple quotation marks:
@@ -184,7 +213,11 @@ Write a multi-line comment in the editor. It can be any text you'd like!
 ###### Hint
 Your multiline comment is just a regular phrase or sentence starting with `"""` and ending with `"""`. No `#` needed at all!
 
+# Math Operations
+<div id='math-1013'/>
 ## Math (10/13)
+[[Back to Top]](#top)
+
 Great! Now let's do some math. You can add, subtract, multiply, divide numbers like this
 
 ```
@@ -203,8 +236,10 @@ Remember, you can set a variable equal to a value with
 ```python
 variable_name = # Add your value here!
 ```
-
+<div id='exponentiation-1113'/>
 ## Exponentiation (11/13)
+[[Back to Top]](#top)
+
 All that math can be done on a calculator, so why use Python? Because you can combine math with other data types (e.g. **booleans**) and commands to create useful programs. Calculators just stick to numbers.
 
 Now let's work with exponents.
@@ -222,7 +257,10 @@ Create a new variable called `eggs` and use exponents to set `eggs` equal 100.
 
 Try raising 10 to the power of 2.
 
+<div id='modulo-1213'/>
 ## Modulo (12/13)
+[[Back to Top]](#top)
+
 Our final operator is **modulo**. **Modulo** returns the remainder from a division. So, if you type `3 % 2`, it will return `1`, because 2 goes into 3 evenly once, with 1 left over.
 
 ### Instructions
@@ -233,7 +271,11 @@ Any odd number `% 2` will equal 1 (since dividing any odd number by 2 always lea
 
 Remember that you can't divide by 0 or you will get an error. Same goes for `%`. `10 % 0` will cause an error!
 
+# Review
+<div id='bringing-it-all-together-1313'/>
 ## Bringing It All Together (13/13)
+[[Back to Top]](#top)
+
 Nice work! So far, you've learned about:
 
 - **Variables**, which store values for later use
