@@ -1,27 +1,27 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Python Syntax](#python-syntax)
-  - [Welcome! (1/13)](#welcome-113)
-  - [Variables (2/13)](#variables-213)
-  - [Booleans (3/13)](#booleans-313)
-  - [You've Been Reassigned (4/13)](#youve-been-reassigned-413)
-  - [Whitespace (5/13)](#whitespace-513)
-  - [Whitespace Means Right Space (6/13)](#whitespace-means-right-space-613)
-  - [A Matter of Interpretation (7/13)](#a-matter-of-interpretation-713)
-  - [Single Line Comments (8/13)](#single-line-comments-813)
-  - [Multi-Line Comments (9/13)](#multi-line-comments-913)
-  - [Math (10/13)](#math-1013)
-  - [Exponentiation (11/13)](#exponentiation-1113)
-  - [Modulo (12/13)](#modulo-1213)
-  - [Bringing It All Together (13/13)](#bringing-it-all-together-1313)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Python Syntax
 
 This tutorial will introduce you to Python, a general-purpose, object-oriented interpreted language you can use for countless standalone projects or scripting applications.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Table of Contents](#toc) 
+	- [Welcome! (1/13)](#welcome-113)
+	- [Variables (2/13)](#variables-213)
+	- [Booleans (3/13)](#booleans-313)
+	- [You've Been Reassigned (4/13)](#youve-been-reassigned-413)
+	- [Whitespace (5/13)](#whitespace-513)
+	- [Whitespace Means Right Space (6/13)](#whitespace-means-right-space-613)
+	- [A Matter of Interpretation (7/13)](#a-matter-of-interpretation-713)
+	- [Single Line Comments (8/13)](#single-line-comments-813)
+	- [Multi-Line Comments (9/13)](#multi-line-comments-913)
+	- [Math (10/13)](#math-1013)
+	- [Exponentiation (11/13)](#exponentiation-1113)
+	- [Modulo (12/13)](#modulo-1213)
+	- [Bringing It All Together (13/13)](#bringing-it-all-together-1313)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Welcome! (1/13)
 Python is an easy to learn programming language. You can use it to create web apps, games, even a search engine!
