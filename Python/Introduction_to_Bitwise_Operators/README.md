@@ -1,7 +1,36 @@
 # Introduction to Bitwise Operators
 Bitwise operations directly manipulate bits—patterns of 0s and 1s. Though they can be tricky to learn at first, their speed makes them a useful addition to any programmer's toolbox.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<div id='top'/>
+## Table of Contents
+
+- [Binary Representation](#binary-representation)
+  - [Just a Little BIT (1/14)](#just-a-little-bit-114)
+  - [Lesson I0: The Base 2 Number System (2/14)](#lesson-i0-the-base-2-number-system-214)
+  - [I Can Count to 1100! (3/14)](#i-can-count-to-1100-314)
+  - [The bin() Function (4/14)](#the-bin-function-414)
+  - [int()'s Second Parameter (5/14)](#ints-second-parameter-514)
+- [The Bitwise Operators](#the-bitwise-operators)
+  - [Slide to the Left! Slide to the Right! (6/14)](#slide-to-the-left-slide-to-the-right-614)
+  - [A BIT of This AND That (7/14)](#a-bit-of-this-and-that-714)
+  - [A BIT of This OR That (8/14)](#a-bit-of-this-or-that-814)
+  - [This XOR That? (9/14)](#this-xor-that-914)
+  - [See? This is NOT That Hard! (10/14)](#see-this-is-not-that-hard-1014)
+- [A Bit More Complicated](#a-bit-more-complicated)
+  - [The Man Behind the Bit Mask (11/14)](#the-man-behind-the-bit-mask-1114)
+  - [Turn It On (12/14)](#turn-it-on-1214)
+  - [Just Flip Out (13/14)](#just-flip-out-1314)
+  - [Slip and Slide (14/14)](#slip-and-slide-1414)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<div id='binary-representation'/>
+# Binary Representation
+<div id='just-a-little-bit-114'/>
 ## Just a Little BIT (1/14)
+[[Back to Top]](#top)
+
 Welcome to an intro level explanation of bitwise operations in Python!
 
 Bitwise operations might seem a little esoteric and tricky at first, but you'll get the hang of them pretty quickly.
@@ -13,7 +42,10 @@ Bitwise operators often tend to puzzle and mystify new programmers, so don't wor
 ### Instructions
 In the editor are the 6 basic bitwise operations. Click Save & Submit Code and see what the console prints out. All of them will be explained in due time!
 
+<div id='lesson-i0-the-base-2-number-system-214'/>
 ## Lesson I0: The Base 2 Number System (2/14)
+[[Back to Top]](#top)
+
 When we count, we usually do it in base 10. That means that each place in a number can hold one of ten values, 0-9. In binary we count in base two, where each place can hold one of two values: 0 or 1. The counting pattern is the same as in base 10 except when you carry over to a new column, you have to carry over every time a place goes higher than one (as opposed to higher than 9 in base 10).
 
 For example, the numbers one and zero are the same in base 10 and base 2. But in base 2, once you get to the number 2 you have to carry over the one, resulting in the representation "10". Adding one again results in "11" (3) and adding one again results in "100" (4).
@@ -33,7 +65,10 @@ In Python, you can write numbers in binary format by starting the number with `0
 ### Instructions
 Take a look at the examples in the editor. Really try to understand this pattern before moving on. Click Save & Submit Code when you're ready to continue.
 
+<div id='i-can-count-to-1100-314'/>
 ## I Can Count to 1100! (3/14)
+[[Back to Top]](#top)
+
 All right! Time to practice counting in binary.
 
 To make sure you've got the hang of it, fill out the rest of the numbers all the way up to twelve. Please **do not** use the str() method or any other outside functions.
@@ -62,7 +97,10 @@ Fill out the rest of the numbers with their corresponding binary values up to tw
 ###### Hint
 Feel free to peek back at the previous exercise if you're having trouble!
 
+<div id='the-bin-function-414'/>
 ## The bin() Function (4/14)
+[[Back to Top]](#top)
+
 Excellent! The biggest hurdle you have to jump over in order to understand bitwise operators is learning how to count in base 2. Hopefully the lesson should be easier for you from here on out.
 
 There are Python functions that can aid you with bitwise operations. In order to print a number in its binary representation, you can use the `bin()` function. `bin()` takes an integer as input and returns the binary representation of that integer in a string. (Keep in mind that after using the `bin` function, you can no longer operate on the value like a number.)
@@ -75,7 +113,10 @@ We've provided an example of the `bin` function in the editor. Go ahead and use 
 ###### Hint
 Use the code on line 1 as a guide! You can use a separate `print` statement for each number, though a loop or range should work just as well.
 
+<div id='ints-second-parameter-514'/>
 ## int()'s Second Parameter (5/14)
+[[Back to Top]](#top)
+
 Python has an `int()` function that you've seen a bit of already. It can turn non-integer input into an integer, like this:
 
 ```python
@@ -100,7 +141,12 @@ On line 7, use `int` to `print` the base 10 equivalent of the binary number 1100
 ###### Hint
 Use the examples on lines 1 – 4 as a guide!
 
+<div id='the-bitwise-operators'/>
+# The Bitwise Operators
+<div id='slide-to-the-left-slide-to-the-right-614'/>
 ## Slide to the Left! Slide to the Right! (6/14)
+[[Back to Top]](#top)
+
 The next two operations we are going to talk about are the left and right shift bitwise operators. These operators work by shifting the bits of a number over by a designated number of slots.
 
 The block below shows how these operators work on the bit level. Note that in the diagram, the shift is always a positive integer:
@@ -125,7 +171,10 @@ Shift the variable shift_right to the right twice (>> 2) and shift the variable 
 ###### Hint
 Use the example in the instructions above as a guide.
 
+<div id='a-bit-of-this-and-that-714'/>
 ## A BIT of This AND That (7/14)
+[[Back to Top]](#top)
+
 The bitwise AND (`&`) operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if the corresponding bits of **both** numbers are 1. For example:
 
 ```python
@@ -159,7 +208,10 @@ which equals two.
 
 See if you can guess what the output will be!
 
+<div id='a-bit-of-this-or-that-814'/>
 ## A BIT of This OR That (8/14)
+[[Back to Top]](#top)
+
 The bitwise OR (`|`) operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if either of the corresponding bits of **either** number are 1. For example:
 
 ```python
@@ -192,7 +244,10 @@ For practice, `print` out the result of using `|` on `0b1110` and `0b101` as a b
 ###### Hint
 This is pretty similar to what you did in the previous exercise! You're just using `|` instead of `&`.
 
+<div id='this-xor-that-914'/>
 ## This XOR That? (9/14)
+[[Back to Top]](#top)
+
 The XOR (`^`) or exclusive or operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if **either** of the corresponding bits of the two numbers are 1, **but not both**.
 
 ```python
@@ -225,7 +280,10 @@ For practice, `print` the result of using `^` on `0b1110` and `0b101` as a binar
 ###### Hint
 This is pretty similar to what you did in the previous exercise! You're just using `^` instead of `|`.
 
+<div id='see-this-is-not-that-hard-1014'/>
 ## See? This is NOT That Hard! (10/14)
+[[Back to Top]](#top)
+
 The bitwise NOT operator (`~`) just flips all of the bits in a single number. What this actually means to the computer is actually very complicated, so we're not going to get into it. Just know that mathematically, this is equivalent to adding one to the number and then making it negative.
 
 And with that, you've seen all of the basic bitwise operators! We'll see what we can do with these in the next section.
@@ -233,7 +291,12 @@ And with that, you've seen all of the basic bitwise operators! We'll see what we
 ### Instructions
 Click Save & Submit Code and observe what the console prints out.
 
+<div id='a-bit-more-complicated'/>
+# A Bit More Complicated
+<div id='the-man-behind-the-bit-mask-1114'/>
 ## The Man Behind the Bit Mask (11/14)
+[[Back to Top]](#top)
+
 A **bit mask** is just a variable that aids you with bitwise operations. A bit mask can help you turn specific bits on, turn others off, or just collect data from an integer about which bits are on or off.
 
 ```python
@@ -270,7 +333,10 @@ check_bit4(0b1010) # ==> "on"
 
 You'll need to use a mask where all bits are off except for the fourth bit from the right.
 
+<div id='turn-it-on-1214'/>
 ## Turn It On (12/14)
+[[Back to Top]](#top)
+
 You can also use masks to turn a bit in a number on using `|`. For example, let's say I want to make sure the rightmost bit of number `a` is turned on. I could do this:
 
 ```python
@@ -287,7 +353,10 @@ In the editor is a variable, `a`. Use a bitmask and the value `a` in order to ac
 ###### Hint
 You should use `|` and the variable `a` with a mask where the third bit from the right, and only the third bit from the right, is on.
 
+<div id='just-flip-out-1314'/>
 ## Just Flip Out (13/14)
+[[Back to Top]](#top)
+
 Using the XOR (`^`) operator is very useful for flipping bits. Using `^` on a bit with the number one will return a result where that bit is flipped.
 
 For example, let's say I want to flip all of the bits in `a`. I might do this:
@@ -304,7 +373,10 @@ In the editor is the 8 bit variable `a`. Use a bitmask and the value `a` in orde
 ###### Hint
 You'll need a mask the same length as `a` in which all of the bits are turned on (all set to 1).
 
+<div id='slip-and-slide-1414'/>
 ## Slip and Slide (14/14)
+[[Back to Top]](#top)
+
 Finally, you can also use the left shift (`<<`) and right shift (`>>`) operators to slide masks into place.
 
 ```python
