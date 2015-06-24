@@ -2,19 +2,27 @@
 
 Now that you understand Python syntax and have been introduced to some Python best practices, let's apply what you've learned to a real-world application: writing data to a file.
 
+<div id='top'/>
 ## Table of Contents
-1. [See It to Believe It](#toc1)
-2. [The open() Function](#toc2)
-3. [Writing](#toc3)
-4. [Reading](#toc4)
-5. [Reading Between the Lines](#toc5)
-6. [PSA: Buffering Data](#toc6)
-7. [The 'with' and 'as' Keywords](#toc7)
-8. [Try It Yourself](#toc8)
-9. [Case Closed?](#toc9)
 
+- [Introduction to File I/O](#toca)
+	- [See It to Believe It](#toc1)
+	- [The open() Function](#toc2)
+	- [Writing](#toc3)
+	- [Reading](#toc4)
+- [The Devil's in the Details](#tocb)
+	- [Reading Between the Lines](#toc5)
+	- [PSA: Buffering Data](#toc6)
+	- [The 'with' and 'as' Keywords](#toc7)
+	- [Try It Yourself](#toc8)
+	- [Case Closed?](#toc9)
+
+<div id='toca'/>
+# Introduction to File I/O
 <div id='toc1'/>
 ## See It to Believe It (1/9)
+[[Back to Top]](#top)
+
 Until now, the Python code you've been writing comes from one source and only goes to one place: you type it in at the keyboard and its results are displayed in the console. But what if you want to read information from a file on your computer, and/or write that information to another file?
 
 This process is called **file I/O** (the "I/O" stands for "input/output"), and Python has a number of built-in functions that handle this for you.
@@ -26,6 +34,8 @@ Click Save & Submit Code, then check out the `output.txt` tab to see Python's fi
 
 <div id='toc2'/>
 ## The open() Function (2/9)
+[[Back to Top]](#top)
+
 Let's walk through the process of writing to a file one step at a time.
 
 The first code that you saw executed in the previous exercise was this:
@@ -46,6 +56,8 @@ You can open files in write-only mode (`"w"`), read-only mode (`"r"`), read and 
 
 <div id='toc3'/>
 ## Writing (3/9)
+[[Back to Top]](#top)
+
 Good work! Now it's time to write some data to our `output.txt` file.
 
 We've added the list comprehension from the first exercise to the code in the editor. Our goal in this exercise will be to write each element of that list to `output.txt` (shown in a new tab above the editor) with each number on its own line.
@@ -86,6 +98,8 @@ str(42)
 
 <div id='toc4'/>
 ## Reading (4/9)
+[[Back to Top]](#top)
+
 Excellent! You're a pro.
 
 Finally, we want to know how to read from our `output.txt` file. As you might expect, we do this with the `read()` function, like so:
@@ -106,8 +120,12 @@ Remember, the syntax for opening a file looks like this:
 variable = open("filename", "mode")
 ```
 
+<div id='tocb'/>
+# The Devil's in the Details
 <div id='toc5'/>
 ## Reading Between the Lines (5/9)
+[[Back to Top]](#top)
+
 What if we want to read from a file line by line, rather than pulling the entire file in at once. Thankfully, Python includes a `readline()` function that does exactly that.
 
 If you open a file and call `.readline()` on the file object, you'll get the first line of the file; subsequent calls to `.readline()` will return successive lines.
@@ -128,6 +146,8 @@ To read from the file, you can just call `variable.readline()`. Make sure to clo
 
 <div id='toc6'/>
 ## PSA: Buffering Data (6/9)
+[[Back to Top]](#top)
+
 We keep telling you that you *always* need to close your files after you're done writing to them. Here's why!
 
 During the I/O process, data is **buffered**: this means that it is held in a temporary location before being written to the file.
@@ -144,6 +164,8 @@ Check out our *extremely bad code* in the editor. Click Save & Submit Code -- yo
 
 <div id='toc7'/>
 ## The 'with' and 'as' Keywords (7/9)
+[[Back to Top]](#top)
+
 Programming is all about getting the computer to do the work. Is there a way to get Python to automatically close our files for us?
 
 Of course there is. This is Python.
@@ -162,6 +184,8 @@ Check out the example in the editor. Note that we don't explicitly `close()` our
 
 <div id='toc8'/>
 ## Try It Yourself (8/9)
+[[Back to Top]](#top)
+
 It worked! Our Python program successfully wrote to `text.txt`.
 
 ### Instructions
@@ -177,6 +201,8 @@ with open("file","mode") as variable:
 
 <div id='toc9'/>
 ## Case Closed? (9/9)
+[[Back to Top]](#top)
+
 Finally, we'll want a way to test whether a file we've opened is closed. Sometimes we'll have a lot of file objects open, and if we're not careful, they won't all be closed. How can we test this?
 
 ```python

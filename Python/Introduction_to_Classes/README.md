@@ -2,7 +2,42 @@
 
 Classes are a crucial part of object-oriented programming (OOP). In this course, we'll explain what classes are, why they're important, and how to use them effectively.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<div id='top'/>
+
+- [Class Basics](#class-basics)
+  - [Why Use Classes? (1/18)](#why-use-classes-118)
+  - [Class Syntax (2/18)](#class-syntax-218)
+  - [Classier Classes (3/18)](#classier-classes-318)
+  - [Let's Not Get Too Selfish (4/18)](#lets-not-get-too-selfish-418)
+  - [Instantiating Your First Object (5/18)](#instantiating-your-first-object-518)
+- [Member Variables and Functions](#member-variables-and-functions)
+  - [More on __init__() and self (6/18)](#more-on-__init__-and-self-618)
+  - [Class Scope (7/18)](#class-scope-718)
+  - [A Methodical Approach (8/18)](#a-methodical-approach-818)
+  - [They're Multiplying! (9/18)](#theyre-multiplying-918)
+  - [It's Not All Animals and Fruits (10/18)](#its-not-all-animals-and-fruits-1018)
+- [Inheritance](#inheritance)
+  - [Warning: Here Be Dragons (11/18)](#warning-here-be-dragons-1118)
+  - [Inheritance Syntax (12/18)](#inheritance-syntax-1218)
+  - [Override! (13/18)](#override-1318)
+  - [This Looks Like a Job For... (14/18)](#this-looks-like-a-job-for-...-1418)
+- [Review](#review)
+  - [Class Basics](#class-basics-1518) 
+  - [Class It Up](#class-it-up)
+  - [Instantiate an Object](#instantiate-an-object)
+  - [Inheritance](#inheritance)
+
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<div id='class-basics'/>
+# Class Basics
+<div id='why-use-classes-118'/>
 ## Why Use Classes? (1/18)
+[[Back to Top]](#top)
+
 Python is an object-oriented programming language, which means it manipulates programming constructs called **objects**. You can think of an object as a single data structure that contains data as well as functions; functions of objects are called **methods**. For example, any time you call
 
 ```python
@@ -24,7 +59,10 @@ Check out the code in the editor to the right. We've defined our own class, `Fru
 
 When you're ready, click Save & Submit Code to get started creating classes and objects of your own.
 
+<div id='class-syntax-218'/>
 ## Class Syntax (2/18)
+[[Back to Top]](#top)
+
 A basic class consists only of the `class` keyword, the name of the class, and the class from which the new class **inherits** in parentheses. (We'll get to inheritance soon.) For now, our classes will inherit from the `object` class, like so:
 
 ```python
@@ -40,7 +78,10 @@ Create a class called `Animal` in the editor. For now, in the body of your class
 ###### Hint
 Use the example in the instructions as a guide!
 
+<div id='classier-classes-318'/>
 ## Classier Classes (3/18)
+[[Back to Top]](#top)
+
 We'd like our classes to do more than... well, nothing, so we'll have to replace our `pass` with something else.
 
 You may have noticed in our example back in the first exercise that we started our class definition off with an odd-looking function: `__init__()`. This function is required for classes, and it's used to **initialize** the objects it creates.  
@@ -57,7 +98,10 @@ def __init__(self):
     pass
 ```
 
+<div id='lets-not-get-too-selfish-418'/>
 ## Let's Not Get Too Selfish (4/18)
+[[Back to Top]](#top)
+
 Excellent! Let's make one more tweak to our class definition, then go ahead and **instantiate** (create) our first object.
 
 So far, `__init__()` only takes one parameter: `self`. This is a Python convention; there's nothing magic about the word `self`. However, it's overwhelmingly common to use `self` as the first parameter in `__init__()`, so you should do this so that other people will understand your code.
@@ -80,7 +124,10 @@ class Animal(object):
         # Set the name parameter here!
 ```
 
+<div id='instantiating-your-first-object-518'/>
 ## Instantiating Your First Object (5/18)
+[[Back to Top]](#top)
+
 Perfect! Now we're ready to start creating objects.
 
 We can access attributes of our objects using **dot notation** Here's how it works:
@@ -116,7 +163,12 @@ You can print out `"Jeffrey"`'s name like this:
 print zebra.name
 ```
 
+<div id='member-variables-and-functions'/>
+# Member Variables and Functions
+<div id='more-on-__init__-and-self-618'/>
 ## More on __init__() and self (6/18)
+[[Back to Top]](#top)
+
 Now that you're starting to understand how classes and objects work, it's worth delving a bit more into `__init__()` and `self`. They can be confusing!
 
 As mentioned, you can think of `__init__()` as the method that "boots up" a class' instance object: the `init` bit is short for "initialize."
@@ -136,7 +188,10 @@ def __init__(self, name, age, is_hungry)
     self.is_hungry = is_hungry
 ```
 
+<div id='class-scope-718'/>
 ## Class Scope (7/18)
+[[Back to Top]](#top)
+
 Another important aspect of Python classes is **scope**. The scope of a variable is the context in which it's visible to the program.
 
 It may surprise you to learn that not all variables are accessible to all parts of a Python program at all times. When dealing with classes, you can have variables that are available everywhere (**global variables**), variables that are only available to members of a certain class (**member variables**), and variables that are only available to particular instances of a class (**instance variables**).
@@ -146,7 +201,10 @@ The same goes for functions: some are available everywhere, some are only availa
 ### Instructions
 Check out the code in the editor. Note that each individual animal gets its own `name` and `age` (since they're all initialized individually), but they all have access to the member variable `is_alive`, since they're all members of the `Animal` class. Click Save & Submit Code to see the output!
 
+<div id='a-methodical-approach-818'/>
 ## A Methodical Approach (8/18)
+[[Back to Top]](#top)
+
 When a class has its own functions, those functions are called **methods**. You've already seen one such method: `__init__()`. But you can also define your own methods!
 
 ### Instructions
@@ -165,7 +223,10 @@ def description(self):
 
 After that, all you need to do is create a `hippo` and call its description method with `hippo.description()`!
 
+<div id='theyre-multiplying-918'/>
 ## They're Multiplying! (9/18)
+[[Back to Top]](#top)
+
 A class can have any number of **member variables**. These are variables that are available to all members of a class.
 
 ```python
@@ -202,7 +263,10 @@ You can print out your `hippo`'s health with
 print hippo.health
 ```
 
+<div id='its-not-all-animals-and-fruits-1018'/>
 ## It's Not All Animals and Fruits (10/18)
+[[Back to Top]](#top)
+
 Classes like `Animal` and `Fruit` make it easy to understand the concepts of classes and instances, but you probably won't see many zebras or lemons in real-world programs.
 
 However, classes and objects are often used to model real-world objects. The code in the editor is a more realistic demonstration of the kind of classes and objects you might find in commercial software. Here we have a basic `ShoppingCart` class for creating shopping cart objects for website customers; though basic, it's similar to what you'd see in a real program.
@@ -223,7 +287,12 @@ Calling the add_item() method might then be:
 my_cart.add_item("Ukelele", 10)
 ```
 
+<div id='inheritance'/>
+# Inheritance
+<div id='warning-here-be-dragons-1118'/>
 ## Warning: Here Be Dragons (11/18)
+[[Back to Top]](#top)
+
 **Inheritance** is a tricky concept, so let's go through it step by step.
 
 Inheritance is the process by which one class takes on the attributes and methods of another, and it's used to express an **is-a** relationship. For example, a Panda **is a** bear, so a Panda class could inherit from a Bear class. However, a Toyota is not a Tractor, so it shouldn't inherit from the Tractor class (even if they have a lot of attributes and methods in common). Instead, both Toyota and Tractor could ultimately inherit from the same Vehicle class.
@@ -231,7 +300,10 @@ Inheritance is the process by which one class takes on the attributes and method
 ### Instructions
 Check out the code in the editor. We've defined a class, `Customer`, as well as a `ReturningCustomer` class that inherits from `Customer`. Note that we don't define the `display_cart` method in the body of `ReturningCustomer`, but it will still have access to that method via inheritance. Click Save & Submit Code to see for yourself!
 
+<div id='inheritance-syntax-1218'/>
 ## Inheritance Syntax (12/18)
+[[Back to Top]](#top)
+
 In Python, inheritance works like this:
 
 ```python
@@ -268,7 +340,10 @@ class Triangle(Shape):
        self.side3 = side3
 ```
 
+<div id='override-1318'/>
 ## Override! (13/18)
+[[Back to Top]](#top)
+
 Sometimes you'll want one class that inherits from another to not only take on the methods and attributes of its parent, but to **override** one or more of them.
 
 ```python
@@ -301,7 +376,10 @@ Rather than have a separate `greet_underling` method for our CEO, we **override*
 ###### Hint
 In the example code above, we created an overriding `CEO.greet` method. It had the same arguments as `Employee.greet`. You'll want to add a `calculate_wage()` method to your `PartTimeEmployee` class, and it should also take `self` and `hours` as arguments. Instead of returning `hours * 20.00`, though, it should return `hours * 12.00`.
 
+<div id='this-looks-like-a-job-for-...-1418'/>
 ## This Looks Like a Job For... (14/18)
+[[Back to Top]](#top)
+
 On the flip side, sometimes you'll be working with a derived class (or **subclass**) and realize that you've overwritten a method or attribute defined in that class' base class (also called a **parent** or **superclass**) that you actually need. Have no fear! You can directly access the attributes or methods of a superclass with Python's built-in `super` call.
 
 The syntax looks like this:
@@ -335,7 +413,12 @@ def full_time_wage(self, hours):
 
 Where `method` is the method you want (`calculate_wage`) and `args` are the arguments that method takes.
 
+<div id='review'/>
+# Review
+<div id='class-basics-1518'/>
 ## Class Basics (15/18)
+[[Back to Top]](#top)
+
 First things first: let's create a class to work with.
 
 ### Instructions
@@ -350,7 +433,10 @@ class ClassName(object):
         # Set self.args = args
 ```
 
+<div id='class-it-up'/>
 ## Class It Up (16/18)
+[[Back to Top]](#top)
+
 Great! Now let's add a member variable and a method to our class.
 
 ### Instructions
@@ -370,7 +456,10 @@ def check_angles(self):
     return False
 ```
 
+<div id='instantiate-an-object'/>
 ## Instantiate an Object (17/18)
+[[Back to Top]](#top)
+
 Let's go ahead and create an instance of our `Triangle` class.
 
 ### Instructions
@@ -387,7 +476,10 @@ instance = Class(args)
 
 Where `args` are the arguments `__init__()` takes, not including `self`.
 
+<div id='inheritance'/>
 ## Inheritance (18/18)
+[[Back to Top]](#top)
+
 Finally, let's create an `Equilateral` class that inherits from our `Triangle` class. (An equilateral triangle is a triangle whose angles are all 60˚, which also means that its three sides are equal in length.)
 
 ### Instructions

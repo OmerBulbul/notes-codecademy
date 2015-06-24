@@ -1,21 +1,29 @@
 # Classes
 Make your own Car and learn how to driveCar()!
 
+<div id='top'/>
 ## Table of Contents
-1. [Class basics](#toc1)
-2. [Create an instance of a class](#toc2)
-3. [Class member variables](#toc3)
-4. [Calling class member variables](#toc4)
-5. [Initializing a class](#toc5)
-6. [Referring to member variables](#toc6)
-7. [Creating class methods](#toc7)
-8. [Modifying member variables](#toc8)
-9. [Inheritance](#toc9)
-10. [Overriding methods](#toc10)
-11. [Building useful classes](#toc11)
+	
+- [A Review of Classes](#toca)
+	- [Class basics (1/11)](#toc1)
+	- [Create an instance of a class (2/11)](#toc2)
+	- [Class member variables (3/11)](#toc3)
+	- [Calling class member variables (4/11)](#toc4)
+	- [Initializing a class (5/11)](#toc5)
+	- [Referring to member variables (6/11)](#toc6)
+- [Using Classes](#tocb)
+	- [Creating class methods (7/11)](#toc7)
+	- [Modifying member variables (8/11)](#toc8)
+	- [Inheritance (9/11)](#toc9)
+	- [Overriding methods (10/11)](#toc10)
+	- [Building useful classes (1/11)](#toc11)
 
+<div id='toca'/>
+# A Review of Classes
 <div id='toc1'/>
 ## Class basics (1/11)
+[[Back to Top]](#top)
+
 Classes can be very useful for storing complicated objects with their own methods and variables. Defining a class is much like defining a function, but we use the `class` keyword instead. We also use the word `object` in parentheses because we want our classes to **inherit** the `object` class. This means that our class has all the properties of an object, which is the simplest, most basic class. Later we'll see that classes can inherit other, more complicated classes. An empty class would look like this:
 
 ```python
@@ -28,6 +36,8 @@ Define a new class named "Car". For now, since we have to put something inside t
 
 <div id='toc2'/>
 ## Create an instance of a class (2/11)
+[[Back to Top]](#top)
+
 We can use classes to create new objects, which we say are **instances** of those classes.
 
 Creating a new instance of a class is as easy as saying:
@@ -41,6 +51,8 @@ Below your Car class, create a new object named `my_car` that is an instance of 
 
 <div id='toc3'/>
 ## Class member variables (3/11)
+[[Back to Top]](#top)
+
 Classes can have **member variables** that store information about each class object. We call them *member* variables since they are information that belongs to the class object.
 
 Creating member variables and assigning them initial values is as easy as creating any other variable:
@@ -55,6 +67,8 @@ Inside your Car class, replace the `pass` statement with a new member variable n
 
 <div id='toc4'/>
 ## Calling class member variables (4/11)
+[[Back to Top]](#top)
+
 Each class object we create has its own set of member variables. Since we've created an object `my_car` that is an instance of the `Car` class, `my_car` should already have a member variable named `condition`. This attribute gets assigned a value as soon as `my_car` is created.
 
 ### Instructions
@@ -65,6 +79,8 @@ Since the attribute `condition` belongs to the object `my_car`, you'll need to u
 
 <div id='toc5'/>
 ## Initializing a class (5/11)
+[[Back to Top]](#top)
+
 There is a special function named `__init__()` that gets called whenever we create a new instance of a class. It exists by default, even though we don't see it. However, we can define our own `__init__()` function inside the class, overwriting the default version. We might want to do this in order to provide more input variables, just like we would with any other function.
 
 The first argument passed to `__init__()` must always be the keyword `self` - this is how the object keeps track of itself internally - but we can pass additional variables after that.
@@ -100,6 +116,8 @@ def __init__(self, model, color, mpg):
 
 <div id='toc6'/>
 ## Referring to member variables (6/11)
+[[Back to Top]](#top)
+
 Calling class member variables works the same whether those values are created within the class (like our car's `condition`) or values are passed into the new object at initialization. We use dot notation to access the member variables of classes since those variables belong to the object.
 
 For instance, if we had created a member variable named `new_variable`, a new instance of the class named `new_object` could access this variable by saying:
@@ -122,8 +140,12 @@ To print `my_car`'s model, you'd type:
 print my_car.model
 ```
 
+<div id='tocb'/>
+# Using Classes
 <div id='toc7'/>
 ## Creating class methods (7/11)
+[[Back to Top]](#top)
+
 Besides member variables, classes can also have their own methods. For example:
 
 ```python
@@ -148,6 +170,8 @@ Remember, in order to access member variables of a class (even while inside of t
 
 <div id='toc8'/>
 ## Modifying member variables (8/11)
+[[Back to Top]](#top)
+
 We can modify variables that belong to a class the same way that we initialize those member variables. This can be useful when we want to change the value a variable takes on based on something that happens inside of a class method.
 
 ### Instructions
@@ -158,6 +182,8 @@ We can modify variables that belong to a class the same way that we initialize t
 
 <div id='toc9'/>
 ## Inheritance (9/11)
+[[Back to Top]](#top)
+
 One of the benefits of classes is that we can create more complicated classes that inherit variables or methods from their **parent classes**. This saves us time and helps us build more complicated objects, since these **child classes** can also include additional variables or methods.
 
 We define a "child" class that inherits all of the variables and functions from its "parent" class like so:
@@ -181,6 +207,8 @@ Remember to include the `self` keyword as the first input when you define the `_
 
 <div id='toc10'/>
 ## Overriding methods (10/11)
+[[Back to Top]](#top)
+
 Since our ElectricCar is a more specialized type of Car, we can give the ElectricCar its own `drive_car()` method that has different functionality than the original Car class's.
 
 ### Instructions
@@ -194,6 +222,8 @@ This should be very similar to what you did in the second exercise of this secti
 
 <div id='toc11'/>
 ## Building useful classes (11/11)
+[[Back to Top]](#top)
+
 Chances are, you won't be designing Car classes in the real world anytime soon. Usually, classes are most useful for holding and accessing abstract collections of data.
 
 One useful class method to override is the built-in `__repr__()` method, which is short for *representation*; by providing a return value in this method, we can tell Python how to represent an object of our class (for instance, when using a `print` statement).

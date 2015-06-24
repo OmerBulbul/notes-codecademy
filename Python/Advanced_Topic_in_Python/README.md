@@ -1,6 +1,34 @@
 # Advanced Topic in Python
+In this lesson, we'll cover some of the more complex aspects of Python, including iterating over data structures, list comprehensions, list slicing, and lambda expressions.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<div id='top'/>
+## Table of Contents
+
+- [List Slicing Syntax](#list-slicing-syntax)
+  - [List Slicing Syntax (7/18)](#list-slicing-syntax-718)
+  - [Omitting Indices (8/18)](#omitting-indices-818)
+  - [Reversing a List (9/18)](#reversing-a-list-918)
+  - [Stride Length (10/18)](#stride-length-1018)
+  - [Practice Makes Perfect (11/18)](#practice-makes-perfect-1118)
+- [Lambda Syntax](#lambda-syntax)
+  - [Anonymous Functions (12/18)](#anonymous-functions-1218)
+  - [Lambda Syntax (13/18)](#lambda-syntax-1318)
+  - [Try It! (14/18)](#try-it-1418)
+- [Review](#review)
+  - [Iterating Over Dictionaries (15/18)](#iterating-over-dictionaries-1518)
+  - [Comprehending Comprehensions (16/18)](#comprehending-comprehensions-1618)
+  - [List Slicing (17/18)](#list-slicing-1718)
+  - [Lambda Expressions (18/18)](#lambda-expressions-1818)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<div id='list-slicing-syntax'/>
+# List Slicing Syntax
+<div id='list-slicing-syntax-718'/>
 ## List Slicing Syntax (7/18)
+[[Back to Top]](#top)
+
 Sometimes we only want part of a Python list. Maybe we only want the first few elements; maybe we only want the last few. Maybe we want every other element!
 
 List slicing allows us to access elements of a list in a concise manner. The syntax looks like this:
@@ -14,7 +42,10 @@ Where `start` describes where the slice starts (inclusive), `end` is where it en
 ### Instructions
 We've generated a list with a list comprehension in the editor to the right, and we're about to print a selection from the list using list slicing. Can you guess what will be printed out? Click Save & Submit Code when you think you know!
 
+<div id='omitting-indices-818'/>
 ## Omitting Indices (8/18)
+[[Back to Top]](#top)
+
 If you don't pass a particular index to the list slice, Python will pick a default.
 
 ```python
@@ -48,7 +79,10 @@ Remember, the syntax for list slicing is
 
 Since you're using the entire list, you should leave out the `start` and `end` indices (but leave in the colons!) and give the slice a `stride` that will select every other (that is, odd) element.
 
+<div id='reversing-a-list-918'/>
 ## Reversing a List (9/18)
+[[Back to Top]](#top)
+
 We have seen that a positive stride progresses through the list from left to right.
 
 A _negative_ stride progresses through the list from right to left.
@@ -64,7 +98,10 @@ In the example above, we print out `['E', 'D', 'C', 'B', 'A']`.
 1. Create a variable called `backwards` and set it equal to the reversed version of `my_list`.
 2. Make sure to reverse the list in the editor by passing your list slice a negative stride, like in the example above.
 
+<div id='stride-length-1018'/>
 ## Stride Length (10/18)
+[[Back to Top]](#top)
+
 A positive stride length traverses the list from left to right, and a negative one traverses the list from right to left.
 
 Further, a stride length of 1 traverses the list "by ones," a stride length of 2 traverses the list "by twos," and so on.
@@ -79,7 +116,10 @@ Remember, the syntax is:
 new_list = old_list[begin:end:stride]
 ```
 
+<div id='practice-makes-perfect-1118'/>
 ## Practice Makes Perfect (11/18)
+[[Back to Top]](#top)
+
 Great work! See? This list slicing business is pretty straightforward.
 
 Let's do one more, just to prove you really know your stuff.
@@ -89,7 +129,12 @@ Let's do one more, just to prove you really know your stuff.
 2. Create a second list, `odds`, that contains only the odd numbers in the `to_21` list (1, 3, 5, and so on). Use list slicing for this one instead of a list comprehension.
 3. Finally, create a third list, `middle_third`, that's equal to the middle third of `to_21`, from 8 to 14, inclusive.
 
+<div id='lambda-syntax'/>
+# Lambda Syntax
+<div id='anonymous-functions-1218'/>
 ## Anonymous Functions (12/18)
+[[Back to Top]](#top)
+
 One of the more powerful aspects of Python is that it allows for a style of programming called *functional programming*, which means that you're allowed to pass functions around just as if they were variables or values. Sometimes we take this for granted, but not all languages allow this!
 
 Check out the code at the right. See the `lambda` bit? Typing
@@ -112,7 +157,10 @@ When we pass the lambda to `filter`, `filter` uses the lambda to determine what 
 ### Instructions
 Can you guess what the this code will `print` to the console? Click Save & Submit Code to see.
 
+<div id='lambda-syntax-1318'/>
 ## Lambda Syntax (13/18)
+[[Back to Top]](#top)
+
 Lambda functions are defined using the following syntax:
 
 ```python
@@ -131,7 +179,10 @@ If you plan on creating a function you'll use over and over, you're better off u
 ###### Hint
 Remember, `filter()` takes two arguments: the first is the function that tells it what to filter, and the second is the object to perform the filtering on.
 
+<div id='try-it-1418'/>
 ## Try It! (14/18)
+[[Back to Top]](#top)
+
 All right! Time to test out `filter()` and `lambda` expressions.
 
 ```python
@@ -148,7 +199,12 @@ The example above is just a reminder of the syntax.
 ###### Hint
 You'll want to filter for `x >=30 and x <=70`.
 
+<div id='review'/>
+# Review
+<div id='iterating-over-dictionaries-1518'/>
 ## Iterating Over Dictionaries (15/18)
+[[Back to Top]](#top)
+
 First, let's review iterating over a `dict`.
 
 ### Instructions
@@ -157,7 +213,10 @@ Call the appropriate method on `movies` such that it will `print` out all the _i
 ###### Hint
 You'll just want to `print` the result of calling the `.items()` method on your `movies`. No loops necessary!
 
+<div id='comprehending-comprehensions-1618'/>
 ## Comprehending Comprehensions (16/18)
+[[Back to Top]](#top)
+
 Good! Now let's take another look at list comprehensions.
 
 ```python
@@ -178,7 +237,10 @@ You can include an optional `if` statement after the range. (You'll need such an
 
 Remember, modulo (`%`) is a good way to check if a number is evenly divisible by another.
 
+<div id='list-slicing-1718'/>
 ## List Slicing (17/18)
+[[Back to Top]](#top)
+
 Great! Next up: list slicing.
 
 ```python
@@ -205,7 +267,10 @@ my_string = my_string[:-7]
 # => Monty
 ```
 
+<div id='lambda-expressions-1818'/>
 ## Lambda Expressions (18/18)
+[[Back to Top]](#top)
+
 Last but not least, let's look over some `lambdas`.
 
 ```python
