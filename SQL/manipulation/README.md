@@ -20,7 +20,7 @@ Table of Contents
 - [Update](#toc7)
 - [Alter](#toc8)
 - [Delete](#toc9)
-- [Generalization](#toc10)
+- [Generalizations](#toc10)
 
 <div id='toc1'/>
 
@@ -343,8 +343,8 @@ Let's summarize what we have learned so far.
 
 <div id='toc10'/>
 
-Generalization
---------------
+Generalizations
+---------------
 
 [[Back to Top]](#top)
 
